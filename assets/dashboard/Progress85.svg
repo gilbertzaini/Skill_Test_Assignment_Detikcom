@@ -1,0 +1,7 @@
+<svg width="180" height="11" viewBox="0 0 180 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Progress">
+<rect id="Line 1" x="0.632812" y="3.03149" width="178.828" height="5.10938" rx="2.55469" fill="#5468E7" fill-opacity="0.5"/>
+<path id="Line 2" d="M0.632812 5.58618C0.632812 4.17527 1.77659 3.03149 3.1875 3.03149H153.914V8.14087H3.1875C1.77658 8.14087 0.632812 6.9971 0.632812 5.58618Z" fill="#5468E7"/>
+<circle id="Mark" cx="153.914" cy="5.58618" r="4.4707" fill="#5468E7" stroke="white" stroke-width="1.27734"/>
+</g>
+</svg>

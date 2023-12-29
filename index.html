@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- Import Font -->
+    <link href="https://fonts.cdnfonts.com/css/lexend-deca" rel="stylesheet" />
+    <link
+      href="https://fonts.cdnfonts.com/css/plus-jakarta-sans"
+      rel="stylesheet"
+    />
+
+    <!-- Import local CSS -->
+    <link href="styles.css" rel="stylesheet" />
+
+    <!-- Import Bootstrap5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div
+      id="htmlWrapper"
+      class="container-fluid d-flex flex-column justify-content-center align-items-center"
+    >
+      <!-- First Section -->
+      <div class="hero newSection flex-column">
+        <div
+          class="header container w-75 d-flex justify-content-between align-items-center"
+        >
+          <div class="logo col-5 d-flex align-items-center">
+            <h3>team<span>.</span></h3>
+          </div>
+          <div
+            class="container-fluid d-flex justify-content-end align-items-center"
+          >
+            <a href="#" class="col-1 customNavLink">Product</a>
+            <a href="#" class="col-1 customNavLink">Blog</a>
+            <a href="#" class="col-1 customNavLink">Support</a>
+            <a href="#" class="col-1 customNavLink">Log In</a>
+            <button class="btn">Get Access</button>
+          </div>
+        </div>
+        <div
+          class="hero-offer container w-75 d-flex flex-column justify-content-start align-items-start"
+        >
+          <div
+            class="content container d-flex flex-column justify-content-center align-items-start"
+          >
+            <h1 class="col-5">
+              <strong>Instant collaboration for remote teams</strong>
+            </h1>
+            <p class="col-5">
+              All-in-one place for your remote team to chat, collaborate and
+              track project progress.
+            </p>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="inputWrapper d-flex align-items-center">
+              <input type="email" placeholder="Email" />
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.20874 13.5H16.3787L11.4987 18.38C11.1087 18.77 11.1087 19.41 11.4987 19.8C11.8887 20.19 12.5187 20.19 12.9087 19.8L19.4987 13.21C19.8887 12.82 19.8887 12.19 19.4987 11.8L12.9187 5.19996C12.7319 5.0127 12.4783 4.90747 12.2137 4.90747C11.9492 4.90747 11.6956 5.0127 11.5087 5.19996C11.1187 5.58996 11.1187 6.21996 11.5087 6.60996L16.3787 11.5H5.20874C4.65874 11.5 4.20874 11.95 4.20874 12.5C4.20874 13.05 4.65874 13.5 5.20874 13.5Z"
+                  fill="#7676B2"
+                />
+              </svg>
+            </div>
+            <button class="btn">Get Early Access</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Section -->
+      <div class="mockupSection newSection my-3">
+        <div class="d-flex justify-content-end container-fluid">
+          <div class="content d-flex flex-column col-4 justify-content-center">
+            <h1><strong>Chats for your distributed teams</strong></h1>
+            <p>
+              Team combines the immediacy of real-time chat with an email
+              threading model. With Team, you can catch up on important
+              conversations while ignoring irrelevant ones.
+            </p>
+            <div class="d-flex align-items-center">
+              <a href="#">Learn more</a>
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.1484 13.7549H6.38594C5.69844 13.7549 5.13594 14.3174 5.13594 15.0049C5.13594 15.6924 5.69844 16.2549 6.38594 16.2549H20.1484V18.4924C20.1484 19.0549 20.8234 19.3299 21.2109 18.9299L24.6859 15.4424C24.9234 15.1924 24.9234 14.8049 24.6859 14.5549L21.2109 11.0674C20.8234 10.6674 20.1484 10.9549 20.1484 11.5049V13.7549Z"
+                  fill="#5468E7"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="mockups col-8">
+            <div class="taskToday d-flex flex-column p-2">
+              <p class="title">Task Today</p>
+
+              <img src="assets/taskToday/Image.jpg" class="banner" />
+
+              <h3 class="caption mt-1">
+                <strong>Creating Awesome Mobile Apps</strong>
+              </h3>
+              <p class="subcaption">UI /UX Designer</p>
+
+              <h3 class="caption">Progress</h3>
+              <img
+                id="progressBar"
+                src="assets/taskToday/Progress.svg"
+                alt="progress"
+              />
+
+              <div
+                class="mt-1 d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex justify-content-start align-items-center">
+                  <img
+                    class="my-auto"
+                    src="assets/taskToday/Time Circle.svg"
+                    alt="Time Circle"
+                  />
+                  <h3 class="caption mx-1 my-auto">1 Hour</h3>
+                </div>
+                <div class="avatars d-flex">
+                  <img src="assets/taskToday/Photo 4.jpg" alt="avatar 4" />
+                  <img src="assets/taskToday/Photo 2.jpg" alt="avatar 2" />
+                  <img src="assets/taskToday/Photo 1.jpg" alt="avatar 1" />
+                  <img src="assets/taskToday/Photo 5.jpg" alt="avatar 5" />
+                  <img src="assets/taskToday/Photo 3.jpg" alt="avatar 3" />
+                </div>
+              </div>
+
+              <div class="detailTask d-flex flex-column mt-3 pt-3">
+                <div class="d-flex justify-content-between align-items-end">
+                  <h3 class="caption">Detail Task</h3>
+                  <p class="subcaption">UI / UX Designer</p>
+                </div>
+
+                <div class="taskList d-flex flex-column">
+                  <div class="taskItem d-flex align-items-center">
+                    <p class="order">1</p>
+                    <p class="listText">Understanding the tools in Figma</p>
+                  </div>
+                  <div class="taskItem d-flex align-items-center">
+                    <p class="order">2</p>
+                    <p class="listText">
+                      Understand the basics of making designs
+                    </p>
+                  </div>
+                  <div class="taskItem d-flex align-items-center">
+                    <p class="order">3</p>
+                    <p class="listText">
+                      Design a mobile application with figma
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="mockupButton mt-3 d-flex justify-content-center align-items-center"
+              >
+                <p class="my-auto">Go To Detail</p>
+              </div>
+            </div>
+
+            <div class="dashboard d-flex">
+              <div
+                class="sidebar py-4 px-2 d-flex flex-column justify-content-between align-items-center"
+              >
+                <div
+                  class="upperSect d-flex flex-column justify-content-center align-items-center"
+                >
+                  <h3 class="logo mb-4">
+                    <strong>team<span>.</span></strong>
+                  </h3>
+                  <div
+                    class="menu d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <div class="item active">
+                      <img
+                        src="assets/dashboard/category-2.svg"
+                        alt="category"
+                      />
+                      <p>Overview</p>
+                    </div>
+                    <div class="item">
+                      <img src="assets/dashboard/book.svg" alt="category" />
+                      <p>Task</p>
+                    </div>
+                    <div class="item d-flex align-items-center">
+                      <img
+                        src="assets/dashboard/user-octagon.svg"
+                        alt="category"
+                      />
+                      <p>Task</p>
+                    </div>
+                    <div class="item">
+                      <img src="assets/dashboard/message.svg" alt="category" />
+                      <p>Mentors</p>
+                    </div>
+                    <div class="item">
+                      <img
+                        src="assets/dashboard/setting-2.svg"
+                        alt="category"
+                      />
+                      <p>Settings</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="helpCenter d-flex flex-column justify-content-center align-items-center"
+                >
+                  <h3 class="caption">Help Center</h3>
+                  <p class="subcaption">
+                    Having Trouble in Learning. Please contact us for more
+                    questions.
+                  </p>
+                  <div
+                    class="mockupButton d-flex justify-content-center align-items-center"
+                  >
+                    <p class="my-auto">Go To Help Center</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mainDashboard p-4 d-flex flex-column">
+                <div
+                  class="dashboardHeader d-flex justify-content-between align-items-center"
+                >
+                  <div class="profile d-flex flex-column">
+                    <h3 class="caption">Hi, Skylar Dias</h3>
+                    <p class="subcaption">Let's finish your task today!</p>
+                  </div>
+                  <div class="action d-flex align-items-center">
+                    <div class="notifications mx-4">
+                      <img
+                        class="bell"
+                        src="assets/dashboard/Notification.svg"
+                        alt="Notification"
+                      />
+                      <img
+                        class="dot"
+                        src="assets/dashboard/notif.svg"
+                        alt="notif"
+                      />
+                    </div>
+                    <img
+                      class="avatar"
+                      src="assets/dashboard/Profil.jpg"
+                      alt="profil"
+                    />
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="patient p-3 d-flex flex-column">
+                    <h3 class="caption">Running Task</h3>
+                    <h4>65</h4>
+                    <div
+                      class="d-flex justify-content-start align-items-center"
+                    >
+                      <div
+                        class="chart d-flex justify-content-center align-items-center"
+                      >
+                        <p class="my-auto">45%</p>
+                      </div>
+                      <div
+                        class="ms-2 course d-flex flex-column justify-content-center align-items-center"
+                      >
+                        <h3 class="caption my-auto">100</h3>
+                        <p class="subcaption my-auto">Task</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="activity p-3 me-2 d-flex flex-column">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <h3 class="caption my-auto">Activity</h3>
+                      <div
+                        class="d-flex justify-content-around align-items-center"
+                      >
+                        <p class="subcaption my-auto">This Week</p>
+                        <img
+                          class="my-auto ms-1"
+                          src="assets/dashboard/arrow-down.svg"
+                          alt="arrow-down"
+                        />
+                      </div>
+                    </div>
+                    <div class="graphWrapper py-2 px-2 d-flex flex-column mt-2">
+                      <div class="d-flex justify-content-between">
+                        <div class="yAxis d-flex flex-column">
+                          <p>3</p>
+                          <p>2</p>
+                          <p>1</p>
+                        </div>
+                        <div
+                          class="lineWrapper my-auto px-1 d-flex justify-content-center align-items-center"
+                        >
+                          <img class="chart" src="assets/dashboard/cart.svg" />
+                          <div class="pointer">
+                            <div
+                              class="innerPointerWrapper d-flex flex-column justify-content-center align-items-center"
+                            >
+                              <p class="caption">2 Task</p>
+                              <img
+                                class="polygon"
+                                src="assets/dashboard/Polygon 2.svg"
+                                alt="Polygon"
+                              />
+                              <img
+                                class="point"
+                                src="assets/dashboard/point.svg"
+                                alt="point"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pt-2 xAxis d-flex justify-content-between">
+                        <p>S</p>
+                        <p>M</p>
+                        <p>T</p>
+                        <p>W</p>
+                        <p>T</p>
+                        <p>F</p>
+                        <p>S</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="monthlyMentors mt-3 d-flex flex-column">
+                  <div
+                    class="title d-flex justify-content-between align-items-center"
+                  >
+                    <h3 class="caption">Monthly Mentors</h3>
+                    <div
+                      class="d-flex justify-content-around align-items-center"
+                    >
+                      <img
+                        src="assets/dashboard/arrow-left.svg"
+                        alt="arrowleft"
+                      />
+                      <img
+                        src="assets/dashboard/arrow-right.svg"
+                        alt="arrowright"
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    class="mentorCardWrapper d-flex justify-content-between align-items-center"
+                  >
+                    <div class="mentorCard">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div class="mentorProfile">
+                          <img
+                            class="avatar"
+                            src="assets/dashboard/george.jpg"
+                            alt="avatar"
+                          />
+                          <div class="identity">
+                            <h3 class="caption">Curious George</h3>
+                            <p class="subcaption">UI UX Design</p>
+                          </div>
+                        </div>
+                        <p class="follow">+ Follow</p>
+                      </div>
+
+                      <div class="mentorFooter">
+                        <div class="course d-flex align-items-center">
+                          <img src="assets/mentors3/note-2.svg" alt="notes" />
+                          <p class="my-auto">40 Task</p>
+                        </div>
+                        <div class="reviews d-flex align-items-center">
+                          <img src="assets/mentors3/Star 1.svg" alt="start" />
+                          <p class="my-auto">4,7 (750 Reviews)</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="mentorCard">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div class="mentorProfile">
+                          <img
+                            class="avatar"
+                            src="assets/dashboard/lincoln.png"
+                            alt="avatar"
+                          />
+                          <div class="identity">
+                            <h3 class="caption">Abraham Lincoln</h3>
+                            <p class="subcaption">3D Design</p>
+                          </div>
+                        </div>
+                        <p class="followed">Followed</p>
+                      </div>
+
+                      <div class="mentorFooter">
+                        <div class="course d-flex align-items-center">
+                          <img src="assets/mentors3/note-2.svg" alt="notes" />
+                          <p class="my-auto">32 Task</p>
+                        </div>
+                        <div class="reviews d-flex align-items-center">
+                          <img src="assets/mentors3/Star 1.svg" alt="start" />
+                          <p class="my-auto">4,9 (510 Reviews)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="upcomingTask mt-3 d-flex flex-column">
+                  <div
+                    class="title d-flex justify-content-between align-items-center"
+                  >
+                    <h3 class="caption">Upcoming Task</h3>
+                    <div
+                      class="d-flex justify-content-around align-items-center"
+                    >
+                      <img
+                        src="assets/dashboard/arrow-left.svg"
+                        alt="arrowleft"
+                      />
+                      <img
+                        src="assets/dashboard/arrow-right.svg"
+                        alt="arrowright"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="taskCardWrapper d-flex justify-content-between align-items-center">
+                    <div class="taskCard">
+                        <img class="banner" src="assets/dashboard/task1.jpg" alt="banner"/>
+                        <div class="description">
+                            <h3 class="caption">Creating Mobile App Design</h3>
+                            <p class="subcaption">UI UX Design</p>
+                        </div>
+                        <div class="progressSection">
+                            <div class="d-flex align-items-center">
+                                <h3 class="title">Progress</h3>
+                                <h3 class="percentage">75%</h3>
+                            </div>
+                            <img class="progressBar" src="assets/dashboard/Progress75.svg" alt="progress"/>
+                        </div>
+
+                        <div class="taskFooter">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <img
+                                  class="time my-auto"
+                                  src="assets/taskToday/Time Circle.svg"
+                                  alt="Time Circle"
+                                />
+                                <h3 class="caption mx-1 my-auto">3 Days Left</h3>
+                              </div>
+                              <div class="avatars d-flex">
+                                <img src="assets/taskToday/Photo 4.jpg" alt="avatar 4" />
+                                <img src="assets/taskToday/Photo 2.jpg" alt="avatar 2" />
+                                <img src="assets/taskToday/Photo 1.jpg" alt="avatar 1" />
+                                <img src="assets/taskToday/Photo 5.jpg" alt="avatar 5" />
+                                <img src="assets/taskToday/Photo 3.jpg" alt="avatar 3" />
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="taskCard">
+                        <img class="banner" src="assets/dashboard/task2.jpg" alt="banner"/>
+                        <div class="description">
+                            <h3 class="caption">Creating Perfect Design</h3>
+                            <p class="subcaption">Web Developer</p>
+                        </div>
+                        <div class="progressSection">
+                            <div class="d-flex align-items-center">
+                                <h3 class="title">Progress</h3>
+                                <h3 class="percentage">85%</h3>
+                            </div>
+                            <img class="progressBar" src="assets/dashboard/Progress85.svg" alt="progress"/>
+                        </div>
+
+                        <div class="taskFooter">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <img
+                                  class="time my-auto"
+                                  src="assets/taskToday/Time Circle.svg"
+                                  alt="Time Circle"
+                                />
+                                <h3 class="caption mx-1 my-auto">4 Days Left</h3>
+                              </div>
+                              <div class="avatars d-flex">
+                                <img src="assets/taskToday/Photo 4.jpg" alt="avatar 4" />
+                                <img src="assets/taskToday/Photo 2.jpg" alt="avatar 2" />
+                                <img src="assets/taskToday/Photo 1.jpg" alt="avatar 1" />
+                                <img src="assets/taskToday/Photo 5.jpg" alt="avatar 5" />
+                                <img src="assets/taskToday/Photo 3.jpg" alt="avatar 3" />
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mentors3 p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                  <img
+                    class="avatar"
+                    src="assets/mentors3/Photo.png"
+                    alt="mentor"
+                  />
+                  <div class="mx-2 profile d-flex flex-column">
+                    <h3 class="caption">Julia Philips</h3>
+                    <p class="subcaption">IOS Developer</p>
+                  </div>
+                </div>
+                <p class="follow">+ Follow</p>
+              </div>
+
+              <div class="upload mt-2">
+                Hi, I'm Julia Philips. I'm a senior manager at Apple company . .
+                .
+              </div>
+
+              <div class="mentorFooter mt-4">
+                <div class="course d-flex align-items-center">
+                  <img src="assets/mentors3/note-2.svg" alt="notes" />
+                  <p class="my-auto">60 Task</p>
+                </div>
+                <div class="reviews d-flex align-items-center">
+                  <img src="assets/mentors3/Star 1.svg" alt="start" />
+                  <p class="my-auto">4,9 (910 Reviews)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="topElement">
+                <img src="assets/dashboard/send-2.svg" alt="send"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Section -->
+      <div class="infoSection newSection"></div>
+
+      <!-- Fourth Section -->
+      <div class="infoSection newSection"></div>
+
+      <!-- Fifth Section -->
+      <div class="infoSection newSection"></div>
+
+      <!-- Sixth Section -->
+      <div class="reviewCarousel newSection"></div>
+
+      <!-- Last Section -->
+      <div class="footer newSection"></div>
+    </div>
+
+    <!-- Import Bootstrap5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
