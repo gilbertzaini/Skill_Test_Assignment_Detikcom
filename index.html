@@ -43,7 +43,7 @@
             <h3>team<span>.</span></h3>
           </div>
           <div
-            class="container-fluid d-flex justify-content-end align-items-center"
+            class="d-none d-lg-flex container-fluid justify-content-end align-items-center"
           >
             <a href="#" class="col-1 customNavLink">Product</a>
             <a href="#" class="col-1 customNavLink">Blog</a>
@@ -51,35 +51,55 @@
             <a href="#" class="col-1 customNavLink">Log In</a>
             <button class="btn">Get Access</button>
           </div>
+          <div class="d-block d-lg-none">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4 8C3.45 8 3 7.55 3 7C3 6.45 3.45 6 4 6H20C20.55 6 21 6.45 21 7C21 7.55 20.55 8 20 8H4ZM4 13H20C20.55 13 21 12.55 21 12C21 11.45 20.55 11 20 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13ZM4 18H20C20.55 18 21 17.55 21 17C21 16.45 20.55 16 20 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18Z"
+                fill="#F5F5F5"
+              />
+            </svg>
+          </div>
         </div>
         <div
-          class="hero-offer container w-75 d-flex flex-column justify-content-start align-items-start"
+          class="hero-offer mx-auto container w-lg-75 d-flex flex-column justify-content-start align-items-start"
         >
           <div
             class="content container d-flex flex-column justify-content-center align-items-start"
           >
-            <h1 class="col-5">
+            <h1 class="col-lg-5">
               <strong>Instant collaboration for remote teams</strong>
             </h1>
-            <p class="col-5">
+            <p class="col-lg-5">
               All-in-one place for your remote team to chat, collaborate and
               track project progress.
             </p>
           </div>
-          <div class="d-flex align-items-center">
-            <div class="inputWrapper d-flex align-items-center">
+          <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+            <div class="inputWrapper mx-auto d-flex justify-content-center align-items-center">
               <input type="email" placeholder="Email" />
               <img src="assets/hero/arrow.svg" alt="arrow" />
             </div>
-            <button class="btn">Get Early Access</button>
+            <button class="btn mt-3 mt-lg-0 ms-lg-4">Get Early Access</button>
           </div>
         </div>
       </div>
 
       <!-- Second Section -->
       <div class="mockupSection container-fluid newSection py-3">
-        <div class="d-flex justify-content-end container-fluid">
-          <div class="content d-flex flex-column col-4 justify-content-center">
+        <div
+          class="d-flex flex-column-reverse flex-lg-row mx-auto container justify-content-end container-fluid"
+        >
+          <div
+            class="ps-2 content col-5 d-flex flex-column justify-content-center"
+          >
             <h1><strong>Chats for your distributed teams</strong></h1>
             <p>
               Team combines the immediacy of real-time chat with an email
@@ -906,31 +926,31 @@
               <p>Collaboration platform for mordern team</p>
             </div>
           </div>
-          <div class="d-flex col-1 flex-column">
+          <div class="d-flex col-2 flex-column">
             <h3 class="title">Company</h3>
             <p class="item">Product</p>
             <p class="item">Blog</p>
             <p class="item">Support</p>
           </div>
-          <div class="d-flex col-1 flex-column">
+          <div class="d-flex col-2 flex-column">
             <h3 class="title">Features</h3>
             <p class="item">Screen Sharing</p>
             <p class="item">iOS & Android Apps</p>
             <p class="item">File Sharing</p>
             <p class="item">User Management</p>
           </div>
-          <div class="d-flex col-1 flex-column">
+          <div class="d-flex col-2 flex-column">
             <h3 class="title">Contact Us</h3>
             <p class="item">info@teamapp.com</p>
             <p class="item">1-800-200-300</p>
             <p class="item">1010 Sunset Blv. Palo Alto, California</p>
           </div>
-          <div class="d-flex flex-column">
+          <div class="d-flex col-2 flex-column">
             <h3 class="title">Stay up to date</h3>
             <p class="item">Subscribe to our newseller</p>
             <div class="inputWrapper d-flex align-items-center">
               <input type="email" placeholder="Email" />
-              <img src="assets/hero/arrow.svg" alt="arrow" />
+              <img src="assets/review/arrow_forward_24px.svg" alt="arrow" />
             </div>
           </div>
         </div>
@@ -954,8 +974,8 @@
         // Optional parameters
         direction: "horizontal",
         loop: false,
-        slidesPerView: 3.2,
-        spacesBetween: 1,
+        slidesPerView: 3.8,
+        spaceBetween: 1,
         allowTouchMove: false,
 
         // Navigation arrows
