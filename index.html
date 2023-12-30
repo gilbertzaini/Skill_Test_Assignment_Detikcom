@@ -22,14 +22,20 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
+    <!-- Import Swiper.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div
       id="htmlWrapper"
-      class="container-fluid d-flex flex-column justify-content-center align-items-center"
+      class="d-flex flex-column justify-content-center align-items-center"
     >
       <!-- First Section -->
-      <div class="hero newSection flex-column">
+      <div class="hero container-fluid newSection flex-column">
         <div
           class="header container w-75 d-flex justify-content-between align-items-center"
         >
@@ -63,18 +69,7 @@
           <div class="d-flex align-items-center">
             <div class="inputWrapper d-flex align-items-center">
               <input type="email" placeholder="Email" />
-              <svg
-                width="24"
-                height="25"
-                viewBox="0 0 24 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.20874 13.5H16.3787L11.4987 18.38C11.1087 18.77 11.1087 19.41 11.4987 19.8C11.8887 20.19 12.5187 20.19 12.9087 19.8L19.4987 13.21C19.8887 12.82 19.8887 12.19 19.4987 11.8L12.9187 5.19996C12.7319 5.0127 12.4783 4.90747 12.2137 4.90747C11.9492 4.90747 11.6956 5.0127 11.5087 5.19996C11.1187 5.58996 11.1187 6.21996 11.5087 6.60996L16.3787 11.5H5.20874C4.65874 11.5 4.20874 11.95 4.20874 12.5C4.20874 13.05 4.65874 13.5 5.20874 13.5Z"
-                  fill="#7676B2"
-                />
-              </svg>
+              <img src="assets/hero/arrow.svg" alt="arrow" />
             </div>
             <button class="btn">Get Early Access</button>
           </div>
@@ -82,7 +77,7 @@
       </div>
 
       <!-- Second Section -->
-      <div class="mockupSection newSection my-3">
+      <div class="mockupSection container-fluid newSection py-3">
         <div class="d-flex justify-content-end container-fluid">
           <div class="content d-flex flex-column col-4 justify-content-center">
             <h1><strong>Chats for your distributed teams</strong></h1>
@@ -450,71 +445,123 @@
                     </div>
                   </div>
 
-                  <div class="taskCardWrapper d-flex justify-content-between align-items-center">
+                  <div
+                    class="taskCardWrapper d-flex justify-content-between align-items-center"
+                  >
                     <div class="taskCard">
-                        <img class="banner" src="assets/dashboard/task1.jpg" alt="banner"/>
-                        <div class="description">
-                            <h3 class="caption">Creating Mobile App Design</h3>
-                            <p class="subcaption">UI UX Design</p>
+                      <img
+                        class="banner"
+                        src="assets/dashboard/task1.jpg"
+                        alt="banner"
+                      />
+                      <div class="description">
+                        <h3 class="caption">Creating Mobile App Design</h3>
+                        <p class="subcaption">UI UX Design</p>
+                      </div>
+                      <div class="progressSection">
+                        <div class="d-flex align-items-center">
+                          <h3 class="title">Progress</h3>
+                          <h3 class="percentage">75%</h3>
                         </div>
-                        <div class="progressSection">
-                            <div class="d-flex align-items-center">
-                                <h3 class="title">Progress</h3>
-                                <h3 class="percentage">75%</h3>
-                            </div>
-                            <img class="progressBar" src="assets/dashboard/Progress75.svg" alt="progress"/>
-                        </div>
+                        <img
+                          class="progressBar"
+                          src="assets/dashboard/Progress75.svg"
+                          alt="progress"
+                        />
+                      </div>
 
-                        <div class="taskFooter">
-                            <div class="d-flex justify-content-start align-items-center">
-                                <img
-                                  class="time my-auto"
-                                  src="assets/taskToday/Time Circle.svg"
-                                  alt="Time Circle"
-                                />
-                                <h3 class="caption mx-1 my-auto">3 Days Left</h3>
-                              </div>
-                              <div class="avatars d-flex">
-                                <img src="assets/taskToday/Photo 4.jpg" alt="avatar 4" />
-                                <img src="assets/taskToday/Photo 2.jpg" alt="avatar 2" />
-                                <img src="assets/taskToday/Photo 1.jpg" alt="avatar 1" />
-                                <img src="assets/taskToday/Photo 5.jpg" alt="avatar 5" />
-                                <img src="assets/taskToday/Photo 3.jpg" alt="avatar 3" />
-                              </div>
+                      <div class="taskFooter">
+                        <div
+                          class="d-flex justify-content-start align-items-center"
+                        >
+                          <img
+                            class="time my-auto"
+                            src="assets/taskToday/Time Circle.svg"
+                            alt="Time Circle"
+                          />
+                          <h3 class="caption mx-1 my-auto">3 Days Left</h3>
                         </div>
+                        <div class="avatars d-flex">
+                          <img
+                            src="assets/taskToday/Photo 4.jpg"
+                            alt="avatar 4"
+                          />
+                          <img
+                            src="assets/taskToday/Photo 2.jpg"
+                            alt="avatar 2"
+                          />
+                          <img
+                            src="assets/taskToday/Photo 1.jpg"
+                            alt="avatar 1"
+                          />
+                          <img
+                            src="assets/taskToday/Photo 5.jpg"
+                            alt="avatar 5"
+                          />
+                          <img
+                            src="assets/taskToday/Photo 3.jpg"
+                            alt="avatar 3"
+                          />
+                        </div>
+                      </div>
                     </div>
 
                     <div class="taskCard">
-                        <img class="banner" src="assets/dashboard/task2.jpg" alt="banner"/>
-                        <div class="description">
-                            <h3 class="caption">Creating Perfect Design</h3>
-                            <p class="subcaption">Web Developer</p>
+                      <img
+                        class="banner"
+                        src="assets/dashboard/task2.jpg"
+                        alt="banner"
+                      />
+                      <div class="description">
+                        <h3 class="caption">Creating Perfect Design</h3>
+                        <p class="subcaption">Web Developer</p>
+                      </div>
+                      <div class="progressSection">
+                        <div class="d-flex align-items-center">
+                          <h3 class="title">Progress</h3>
+                          <h3 class="percentage">85%</h3>
                         </div>
-                        <div class="progressSection">
-                            <div class="d-flex align-items-center">
-                                <h3 class="title">Progress</h3>
-                                <h3 class="percentage">85%</h3>
-                            </div>
-                            <img class="progressBar" src="assets/dashboard/Progress85.svg" alt="progress"/>
-                        </div>
+                        <img
+                          class="progressBar"
+                          src="assets/dashboard/Progress85.svg"
+                          alt="progress"
+                        />
+                      </div>
 
-                        <div class="taskFooter">
-                            <div class="d-flex justify-content-start align-items-center">
-                                <img
-                                  class="time my-auto"
-                                  src="assets/taskToday/Time Circle.svg"
-                                  alt="Time Circle"
-                                />
-                                <h3 class="caption mx-1 my-auto">4 Days Left</h3>
-                              </div>
-                              <div class="avatars d-flex">
-                                <img src="assets/taskToday/Photo 4.jpg" alt="avatar 4" />
-                                <img src="assets/taskToday/Photo 2.jpg" alt="avatar 2" />
-                                <img src="assets/taskToday/Photo 1.jpg" alt="avatar 1" />
-                                <img src="assets/taskToday/Photo 5.jpg" alt="avatar 5" />
-                                <img src="assets/taskToday/Photo 3.jpg" alt="avatar 3" />
-                              </div>
+                      <div class="taskFooter">
+                        <div
+                          class="d-flex justify-content-start align-items-center"
+                        >
+                          <img
+                            class="time my-auto"
+                            src="assets/taskToday/Time Circle.svg"
+                            alt="Time Circle"
+                          />
+                          <h3 class="caption mx-1 my-auto">4 Days Left</h3>
                         </div>
+                        <div class="avatars d-flex">
+                          <img
+                            src="assets/taskToday/Photo 4.jpg"
+                            alt="avatar 4"
+                          />
+                          <img
+                            src="assets/taskToday/Photo 2.jpg"
+                            alt="avatar 2"
+                          />
+                          <img
+                            src="assets/taskToday/Photo 1.jpg"
+                            alt="avatar 1"
+                          />
+                          <img
+                            src="assets/taskToday/Photo 5.jpg"
+                            alt="avatar 5"
+                          />
+                          <img
+                            src="assets/taskToday/Photo 3.jpg"
+                            alt="avatar 3"
+                          />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -555,26 +602,342 @@
             </div>
 
             <div class="topElement">
-                <img src="assets/dashboard/send-2.svg" alt="send"/>
+              <img src="assets/dashboard/send-2.svg" alt="send" />
             </div>
           </div>
         </div>
       </div>
 
       <!-- Third Section -->
-      <div class="infoSection newSection"></div>
+      <div class="infoSection firstInfo container-fluid newSection py-3">
+        <div class="bannerWrapper">
+          <img
+            class="props"
+            src="assets/infoSection1/calendar.png"
+            alt="props"
+          />
+          <img class="banner" src="assets/infoSection1/banner.jpg" />
+        </div>
+        <div class="content d-flex flex-column col-4 justify-content-center">
+          <!-- <h1><strong>Chats for your distributed teams</strong></h1> -->
+          <h1>Chats for your distributed teams</h1>
+          <p>
+            Team combines the immediacy of real-time chat with an email
+            threading model. With Team, you can catch up on important
+            conversations while ignoring irrelevant ones.
+          </p>
+          <div class="d-flex align-items-center">
+            <a href="#">Learn more</a>
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.1484 13.7549H6.38594C5.69844 13.7549 5.13594 14.3174 5.13594 15.0049C5.13594 15.6924 5.69844 16.2549 6.38594 16.2549H20.1484V18.4924C20.1484 19.0549 20.8234 19.3299 21.2109 18.9299L24.6859 15.4424C24.9234 15.1924 24.9234 14.8049 24.6859 14.5549L21.2109 11.0674C20.8234 10.6674 20.1484 10.9549 20.1484 11.5049V13.7549Z"
+                fill="#5468E7"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
 
       <!-- Fourth Section -->
-      <div class="infoSection newSection"></div>
+      <div class="infoSection secondInfo container-fluid newSection py-3">
+        <div class="content d-flex flex-column col-4 justify-content-center">
+          <!-- <h1><strong>Chats for your distributed teams</strong></h1> -->
+          <h1>Move faster with your Team tools</h1>
+          <p>
+            With your other work apps connected to Team, you can work faster by
+            switching tabs less. And with powerful tools like Workflow Builder,
+            you can automate away routine tasks.
+          </p>
+          <div class="d-flex align-items-center">
+            <a href="#">Learn more</a>
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.1484 13.7549H6.38594C5.69844 13.7549 5.13594 14.3174 5.13594 15.0049C5.13594 15.6924 5.69844 16.2549 6.38594 16.2549H20.1484V18.4924C20.1484 19.0549 20.8234 19.3299 21.2109 18.9299L24.6859 15.4424C24.9234 15.1924 24.9234 14.8049 24.6859 14.5549L21.2109 11.0674C20.8234 10.6674 20.1484 10.9549 20.1484 11.5049V13.7549Z"
+                fill="#5468E7"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="bannerWrapper">
+          <div
+            class="props d-flex flex-column justify-content-center align-items-center"
+          >
+            <img src="assets/infoSection2/props1.png" alt="props1" />
+            <img src="assets/infoSection2/props2.png" alt="props2" />
+          </div>
+          <img class="banner" src="assets/infoSection2/banner.jpg" />
+        </div>
+      </div>
 
       <!-- Fifth Section -->
-      <div class="infoSection newSection"></div>
+      <div class="infoSection thirdInfo container-fluid newSection py-3">
+        <div class="bannerWrapper">
+          <div
+            class="props d-flex flex-column justify-content-center align-items-center"
+          >
+            <img src="assets/infoSection3/props1.png" alt="props1" />
+            <img src="assets/infoSection3/props2.png" alt="props2" />
+          </div>
+          <img class="banner" src="assets/infoSection3/banner.jpg" />
+        </div>
+        <div class="content d-flex flex-column col-4 justify-content-center">
+          <!-- <h1><strong>Chats for your distributed teams</strong></h1> -->
+          <h1>Choose how you want to work</h1>
+          <p>
+            In Team, you’ve got all the flexibility to work when, where and how
+            it’s best for you. You can easily chat, send audio and video clips,
+            or hop on a huddle to talk things out live.
+          </p>
+          <div class="d-flex align-items-center">
+            <a href="#">Learn more</a>
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.1484 13.7549H6.38594C5.69844 13.7549 5.13594 14.3174 5.13594 15.0049C5.13594 15.6924 5.69844 16.2549 6.38594 16.2549H20.1484V18.4924C20.1484 19.0549 20.8234 19.3299 21.2109 18.9299L24.6859 15.4424C24.9234 15.1924 24.9234 14.8049 24.6859 14.5549L21.2109 11.0674C20.8234 10.6674 20.1484 10.9549 20.1484 11.5049V13.7549Z"
+                fill="#5468E7"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
 
       <!-- Sixth Section -->
-      <div class="reviewCarousel newSection"></div>
+      <div class="reviewCarousel container-fluid newSection py-3">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <h1 class="carouselTitle">
+            <strong>What people say about Team</strong>
+          </h1>
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="reviewCard">
+                <div class="rate">
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                </div>
+                <div class="reviewText">
+                  <p>
+                    Vestibulum eu quam nec neque pellentesque efficitur id eget
+                    nisl. Proin porta est convallis lacus blandit pretium sed
+                    non enim. Maecenas lacinia non orci at aliquam. Donec
+                    finibus, urna bibendum ultricies laoreet.
+                  </p>
+                </div>
+                <div class="profile">
+                  <img
+                    class="avatar"
+                    src="assets/review/chealsea morgan.png"
+                    alt="avatar"
+                  />
+                  <div class="d-flex flex-column">
+                    <h3 class="caption">Chealsea Morgan</h3>
+                    <p class="subcaption">CEO ot Subway</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="reviewCard">
+                <div class="rate">
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                </div>
+                <div class="reviewText">
+                  <p>
+                    In a laoreet purus. Integer turpis quam, laoreet id orci
+                    nec, ultrices lacinia nunc. Aliquam erat volutpat. Curabitur
+                    fringilla in purus eget egestas. Etiam quis.
+                  </p>
+                </div>
+                <div class="profile">
+                  <img
+                    class="avatar"
+                    src="assets/review/nick cave.png"
+                    alt="avatar"
+                  />
+                  <div class="d-flex flex-column">
+                    <h3 class="caption">Nick Cave</h3>
+                    <p class="subcaption">CMO ot Nokia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="reviewCard">
+                <div class="rate">
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                </div>
+                <div class="reviewText">
+                  <p>
+                    Aliquam pulvinar vestibulum blandit. Donec sed nisl libero.
+                    Fusce dignissim luctus sem eu dapibus. Pellentesque
+                    vulputate quam a quam volutpat, sed ullamcorper erat
+                    commodo.
+                  </p>
+                </div>
+                <div class="profile">
+                  <img
+                    class="avatar"
+                    src="assets/review/lana rosenfeld.png"
+                    alt="avatar"
+                  />
+                  <div class="d-flex flex-column">
+                    <h3 class="caption">Lana Rosenfeld</h3>
+                    <p class="subcaption">Senior VP ot Pinterest</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="reviewCard">
+                <div class="rate">
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                </div>
+                <div class="reviewText">
+                  <p>
+                    Porta nisl dolor, molestie pellentesque elit molestie in.
+                    Morbi metus neque, elementum ullamcorper hendrerit eget,
+                    tincidunt et nisi. Sed magna nunc.
+                  </p>
+                </div>
+                <div class="profile">
+                  <img
+                    class="avatar"
+                    src="assets/review/giorgio moroder.png"
+                    alt="avatar"
+                  />
+                  <div class="d-flex flex-column">
+                    <h3 class="caption">Giorgio Moroder</h3>
+                    <p class="subcaption">CTO ot Glovo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="reviewCard">
+                <div class="rate">
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                  <img src="assets/review/Star.svg" alt="star" />
+                </div>
+                <div class="reviewText">
+                  <p>
+                    Integer turpis quam, laoreet id orci nec, ultrices lacinia
+                    nunc. Aliquam erat volutpat. Curabitur fringilla in purus
+                    eget egestas. Etiam quis. In a laoreet purus.
+                  </p>
+                </div>
+                <div class="profile">
+                  <img
+                    class="avatar"
+                    src="assets/review/young liu.png"
+                    alt="avatar"
+                  />
+                  <div class="d-flex flex-column">
+                    <h3 class="caption">Young Liu</h3>
+                    <p class="subcaption">CAO ot Foxconn</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="navWrapper">
+            <div class="swiper-prev">
+              <img
+                src="assets/hero/arrow.svg"
+                style="transform: rotateY(180deg)"
+                alt="left"
+              />
+            </div>
+            <div class="swiper-next">
+              <img src="assets/hero/arrow.svg" alt="left" />
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Last Section -->
-      <div class="footer newSection"></div>
+      <div class="footer container-fluid newSection">
+        <div class="d-flex col-10 mx-auto justify-content-between">
+          <div class="d-flex col-2 flex-column">
+            <div class="logo">
+              <h3>team<span>.</span></h3>
+              <p>Collaboration platform for mordern team</p>
+            </div>
+          </div>
+          <div class="d-flex col-1 flex-column">
+            <h3 class="title">Company</h3>
+            <p class="item">Product</p>
+            <p class="item">Blog</p>
+            <p class="item">Support</p>
+          </div>
+          <div class="d-flex col-1 flex-column">
+            <h3 class="title">Features</h3>
+            <p class="item">Screen Sharing</p>
+            <p class="item">iOS & Android Apps</p>
+            <p class="item">File Sharing</p>
+            <p class="item">User Management</p>
+          </div>
+          <div class="d-flex col-1 flex-column">
+            <h3 class="title">Contact Us</h3>
+            <p class="item">info@teamapp.com</p>
+            <p class="item">1-800-200-300</p>
+            <p class="item">1010 Sunset Blv. Palo Alto, California</p>
+          </div>
+          <div class="d-flex flex-column">
+            <h3 class="title">Stay up to date</h3>
+            <p class="item">Subscribe to our newseller</p>
+            <div class="inputWrapper d-flex align-items-center">
+              <input type="email" placeholder="Email" />
+              <img src="assets/hero/arrow.svg" alt="arrow" />
+            </div>
+          </div>
+        </div>
+        <div class="copyright col-10 mx-auto">
+          <p>© Copyright Team Inc.</p>
+        </div>
+      </div>
     </div>
 
     <!-- Import Bootstrap5 JS -->
@@ -583,5 +946,24 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <!-- Import Script Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom Script -->
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: false,
+        slidesPerView: 3.2,
+        spacesBetween: 1,
+        allowTouchMove: false,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-next",
+          prevEl: ".swiper-prev",
+        },
+      });
+    </script>
   </body>
 </html>
