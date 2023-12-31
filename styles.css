@@ -153,55 +153,6 @@ span {
   margin-left: -12%;
 }
 
-@media screen and (max-width: 48em) and (orientation: portrait) {
-  .hero {
-    background: radial-gradient(
-        149% 68.25% at 4.91% 53.92%,
-        rgba(35, 35, 64, 0.8) 33.46%,
-        rgba(22, 22, 40, 0.48) 58.72%,
-        rgba(0, 0, 0, 0.02) 100%
-      ),
-      radial-gradient(
-        35.82% 25.27% at 85.43% 4.19%,
-        rgba(0, 0, 0, 0.08) 16.15%,
-        rgba(0, 0, 0, 0) 84.53%
-      ),
-      radial-gradient(
-        26.75% 26.3% at 69.9% -0.97%,
-        rgba(0, 0, 0, 0.08) 15.16%,
-        rgba(0, 0, 0, 0) 79.3%
-      ),
-      radial-gradient(
-        33.92% 29.06% at 63.41% -3.63%,
-        rgba(0, 0, 0, 0.08) 22.94%,
-        rgba(0, 0, 0, 0) 84.89%
-      ),
-      radial-gradient(
-        48.8% 31.27% at 53.79% 2.3%,
-        rgba(0, 0, 0, 0.08) 15.16%,
-        rgba(0, 0, 0, 0) 84.82%
-      ),
-      url("assets/hero/heroimage.png");
-    background-size: cover;
-    background-position: 70% 50%;
-  }
-
-  .hero-offer .content h1 {
-    font-size: 34px;
-  }
-  .hero-offer .content p {
-    font-size: 16px;
-  }
-
-  .hero-offer button {
-    width: 298px;
-  }
-
-  .hero-offer input {
-    margin-left: -4%;
-  }
-}
-
 /* Second Section */
 
 .mockupSection {
@@ -1085,15 +1036,15 @@ span {
 }
 
 .infoSection .banner {
-  width: 565px;
-  height: 565px;
+  width: inherit;
+  height: inherit;
   object-fit: cover;
 }
 
 .infoSection .content h1 {
   color: var(--Dark-Blue, #232340);
   font-size: 50px;
-  line-height: 64px; /* 128% */
+  line-height: 128%;
 }
 
 .infoSection .content p {
@@ -1103,7 +1054,7 @@ span {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 27px; /* 150% */
+  line-height: 150%;
 }
 
 .firstInfo .props {
@@ -1282,7 +1233,8 @@ span {
 /* Footer */
 .footer {
   background: var(--Dark-Blue);
-  height: 500px;
+  min-height: 500px;
+  height: fit-content;
   flex-direction: column;
   justify-content: space-between;
   padding: 5% 6% 2% 6%;
@@ -1325,4 +1277,104 @@ span {
 
 .footer .inputWrapper img {
   margin-left: -38px;
+}
+
+/* Phone - Potrait */
+
+@media screen and (max-width: 48em) and (orientation: portrait) {
+  /* Hero */
+  .hero {
+    background: radial-gradient(
+        149% 68.25% at 4.91% 53.92%,
+        rgba(35, 35, 64, 0.8) 33.46%,
+        rgba(22, 22, 40, 0.48) 58.72%,
+        rgba(0, 0, 0, 0.02) 100%
+      ),
+      radial-gradient(
+        35.82% 25.27% at 85.43% 4.19%,
+        rgba(0, 0, 0, 0.08) 16.15%,
+        rgba(0, 0, 0, 0) 84.53%
+      ),
+      radial-gradient(
+        26.75% 26.3% at 69.9% -0.97%,
+        rgba(0, 0, 0, 0.08) 15.16%,
+        rgba(0, 0, 0, 0) 79.3%
+      ),
+      radial-gradient(
+        33.92% 29.06% at 63.41% -3.63%,
+        rgba(0, 0, 0, 0.08) 22.94%,
+        rgba(0, 0, 0, 0) 84.89%
+      ),
+      radial-gradient(
+        48.8% 31.27% at 53.79% 2.3%,
+        rgba(0, 0, 0, 0.08) 15.16%,
+        rgba(0, 0, 0, 0) 84.82%
+      ),
+      url("assets/hero/heroimage.png");
+    background-size: cover;
+    background-position: 70% 50%;
+  }
+
+  .hero-offer .content h1 {
+    font-size: 34px;
+  }
+  .hero-offer .content p {
+    font-size: 16px;
+  }
+
+  .hero-offer button {
+    width: 298px;
+  }
+
+  .hero-offer input {
+    margin-left: -4%;
+  }
+
+  /* Info Section */
+
+  .infoSection {
+    flex-direction: column;
+  }
+
+  .infoSection .bannerWrapper {
+    width: 300px;
+    height: 288px;
+    align-self: flex-start;
+  }
+
+  .infoSection .content {
+    margin-top: -60px;
+    align-self: end;
+  }
+
+  .infoSection .content h1 {
+    font-size: 34px;
+  }
+
+  .infoSection .content p {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .footer {
+    min-height: 1140px;
+  }
+
+  .footer .logo,
+  .footerSection {
+    margin-top: 35px;
+  }
+}
+
+/* Phone - Landscape */
+
+@media screen and (max-width: 64em) and (orientation: landscape) {
+  /* Footer */
+  .footer {
+    min-height: 764px;
+  }
+
+  .footer .logo {
+    margin: 35px 0;
+  }
 }
