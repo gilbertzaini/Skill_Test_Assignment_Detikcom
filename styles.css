@@ -1334,6 +1334,8 @@ span {
 
   .infoSection {
     flex-direction: column;
+    padding: 0 !important;
+    height: 684px;
   }
 
   .infoSection .bannerWrapper {
@@ -1343,7 +1345,6 @@ span {
   }
 
   .infoSection .content {
-    margin-top: -60px;
     align-self: end;
   }
 
@@ -1353,6 +1354,35 @@ span {
 
   .infoSection .content p {
     font-size: 16px;
+  }
+
+  .firstInfo .props {
+    width: 168px;
+    height: 72px;
+  }
+
+  .firstInfo .banner {
+    object-position: left 0;
+  }
+
+  .secondInfo .props img:first-child {
+    width: 104px;
+    height: 44.611px;
+  }
+
+  .secondInfo .props img:last-child {
+    width: 104px;
+    height: 99.36px;
+  }
+
+  .thirdInfo .props img:first-child {
+    width: 104px;
+    height: 99.335px;
+  }
+
+  .thirdInfo .props img:last-child {
+    width: 104px;
+    height: 44.611px;
   }
 
   /* Footer */
@@ -1369,6 +1399,68 @@ span {
 /* Phone - Landscape */
 
 @media screen and (max-width: 64em) and (orientation: landscape) {
+  /* Info Section */
+
+  .infoSection {
+    padding: 0 !important;
+    height: 438px;
+  }
+
+  .infoSection .bannerWrapper {
+    width: 280px;
+    height: 360px;
+  }
+
+  .firstInfo .bannerWrapper,
+  .thirdInfo .bannerWrapper {
+    margin-left: -59px;
+  }
+
+  .secondInfo .bannerWrapper {
+    margin-right: -59px;
+  }
+
+  .infoSection .content {
+    width: 50%;
+  }
+
+  .infoSection .content h1 {
+    font-size: 34px;
+  }
+
+  .infoSection .content p {
+    font-size: 16px;
+  }
+
+  .firstInfo .props {
+    width: 160px;
+    height: 68.421px;
+  }
+
+  .firstInfo .banner {
+    object-position: left 0;
+  }
+
+  .secondInfo .props img:first-child {
+    width: 120px;
+    height: 51.474px;
+  }
+
+  .secondInfo .props img:last-child {
+    width: 120px;
+    height: 114.646px;
+  }
+
+  .thirdInfo .props img:first-child {
+    width: 128px;
+    height: 122.259px;
+  }
+
+  .thirdInfo .props img:last-child {
+    width: 128px;
+    height: 54.905px;
+  }
+
   /* Footer */
   .footer {
     min-height: 764px;
